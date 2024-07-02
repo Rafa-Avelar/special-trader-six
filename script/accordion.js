@@ -57,6 +57,8 @@ const accordionData = [
 
 function createAccordionItem(item) {
   const wrapper = document.createElement("div");
+  wrapper.dataset.aos = "fade-up";
+
   wrapper.classList.add(
     "hover:opacity-75",
     "transition-all",
@@ -99,4 +101,3 @@ document.addEventListener("DOMContentLoaded", () => {
     accordionWrapper.appendChild(accordionItem);
   });
 });
-
