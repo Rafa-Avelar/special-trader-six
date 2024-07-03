@@ -818,6 +818,10 @@ video {
   width: 100%;
 }
 
+.max-w-\[1008px\] {
+  max-width: 1008px;
+}
+
 .max-w-\[208px\] {
   max-width: 208px;
 }
@@ -902,20 +906,8 @@ video {
   max-width: 800px;
 }
 
-.max-w-\[964px\] {
-  max-width: 964px;
-}
-
 .max-w-\[968px\] {
   max-width: 968px;
-}
-
-.max-w-\[1072px\] {
-  max-width: 1072px;
-}
-
-.max-w-\[1008px\] {
-  max-width: 1008px;
 }
 
 .cursor-pointer {
