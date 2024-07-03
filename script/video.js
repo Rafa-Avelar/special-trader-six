@@ -1,10 +1,4 @@
-const videos = [
-  {
-    time: "42:5min",
-    title: "Introdução a Bolsa de Valores",
-    link: "#",
-    status: "watching",
-  },
+/* const videos = [
   {
     time: "40:10min",
     title: "Principais índices de mercado",
@@ -48,39 +42,27 @@ function renderVideos(videoArray) {
 
   videoArray.forEach((video, index) => {
     const videoCard = document.createElement("div");
-    videoCard.classList.add(
-      "cursor-pointer",
-      "swiper-slide",
-      "w-full",
-      "max-w-[280px]",
-      "p-6",
-      "rounded-md",
-      "flex",
-      "flex-col",
-      "video-height"
-    );
 
-    if (video.status === "watching") {
-      videoCard.classList.add("video-active");
-    } else {
-      videoCard.classList.add("video-off");
-    }
-
-    videoCard.innerHTML = `
-      <div>
-        <p class="whitespace-pre font-HEAD text-head24 leading-tight font-light text-white">${
-          video.title
-        }</p>
-        <span class="font-BODY text-body14 text-white font-light mt-2">${
-          video.time
-        }</span>
-      </div>
-      <div class="mt-4">
-        <p class="font-BTN text-white font-bold text-body14">${
-          video.status === "watching" ? "Assistindo" : "Desbloquear aula"
-        }</p>
-      </div>
-      
+    videoCard.innerHTML = `/*  */
+      /* <div
+            class="swiper-slide h-[164px] max-w-[280px] w-full bg-GRAY-800-75 rounded-md p-6 flex flex-col justify-between"
+          >
+            <div class="w-full">
+              <p
+                class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+              >
+                ${video.title}
+              </p>
+              <span class="font-BODY text-body14 text-white font-light mt-2"
+                >${video.time}</span
+              >
+            </div>
+            <div class="mt-4">
+              <a href='#adquirir-treinamento' class="font-BTN text-white font-bold text-body14">
+                Desbloquear aula
+              </a>
+            </div>
+          </div> */
     `;
 
     videoCard.addEventListener("click", () => {
@@ -95,3 +77,4 @@ function renderVideos(videoArray) {
 document.addEventListener("DOMContentLoaded", () => {
   renderVideos(videos);
 });
+ */

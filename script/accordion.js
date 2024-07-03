@@ -48,9 +48,9 @@ const accordionData = [
     id: 10,
     header: "Como acessar?",
     body: `
-      Após realizar o pagamento e ter sido confirmado com sucesso, você receberá o acesso imediato ao nosso portal de aulas com o seu login e senha por e-mail.<br>
-      Você poderá acessar o portal pelo link que receber (<a href="https://special.sixtraders.com.br" target="_blank">https://special.sixtraders.com.br</a>) via e-mail ou clicar em Entrar, no topo da página do site. Caso encontre qualquer dificuldade com a senha, é só utilizar a função “Esqueceu sua senha?”.<br>
-      Se tiver alguma dúvida, não se preocupe, o nosso suporte está sempre disposto a ajudar da melhor maneira. É só enviar uma mensagem para: <a href="mailto:contato@sixtraders.com.br">contato@sixtraders.com.br</a> ou WhatsApp <a href="https://wa.me/5511979727524" target="_blank">+55 (11) 97972-7524</a>.
+      Após realizar o pagamento e ter sido confirmado com sucesso, você receberá o acesso imediato ao nosso portal de aulas com o seu login e senha por e-mail.<br><br>
+      Você poderá acessar o portal pelo link que receber (<a class="underline underline-offset-4" href="https://special.sixtraders.com.br" target="_blank">https://special.sixtraders.com.br</a>) via e-mail ou clicar em Entrar, no topo da página do site. Caso encontre qualquer dificuldade com a senha, é só utilizar a função “Esqueceu sua senha?”.<br><br>
+      Se tiver alguma dúvida, não se preocupe, o nosso suporte está sempre disposto a ajudar da melhor maneira. É só enviar uma mensagem para: <a class="underline underline-offset-4" href="mailto:contato@sixtraders.com.br">contato@sixtraders.com.br</a> ou WhatsApp <a class="underline underline-offset-4" href="https://wa.me/5511979727524" target="_blank">+55 (11) 97972-7524</a>.
     `,
   },
 ];
