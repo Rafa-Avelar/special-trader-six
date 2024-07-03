@@ -68,7 +68,7 @@
               <a
                 class="text-sm14 font-BODY font-light text-WHITE hover:opacity-25 transition-all"
                 href="#início"
-                >ínicio
+                >Início
               </a>
               <a
                 class="text-sm14 font-BODY font-light text-WHITE hover:opacity-25 transition-all"
@@ -108,11 +108,13 @@
           <button></button>
           <div class="md:max-w-[192px]">
             <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
-              Garantir Acesso
-              <iconify-icon
-                class="text-body18"
-                icon="radix-icons:chevron-right"
-              ></iconify-icon>
+              <div class="primary-btn-inside">
+                Garantir Acesso
+                <iconify-icon
+                  class="text-body18"
+                  icon="radix-icons:chevron-right"
+                ></iconify-icon>
+              </div>
             </a>
           </div>
         </div>
@@ -122,13 +124,12 @@
     <main id="início" class="mt-[80px]">
       <div class="container h-[800px] flex items-center">
         <div>
-          <div data-aos="fade-left">
+          <div>
             <span class="font-HEAD font-light text-body16 text-WHITE"
               >O HUB QUE PODE FAZER DE VOCÊ UM MILIONÁRIO!</span
             >
           </div>
           <h1
-            data-aos="fade-up"
             class="mt-4 text-head48 text-white font-HEAD font-normal leading-tight"
           >
             Apenas 1 hora por dia para <br />
@@ -136,14 +137,13 @@
             <b>20.000 por mês.</b>
           </h1>
           <p
-            data-aos="fade-up"
             class="font-BODY font-light text-body18 text-WHITE md:max-w-[474px] mt-[18px]"
           >
             Descubra as técnicas e ferramentas exclusivas capazes de transformar
             para sempre o seu patamar financeiro
           </p>
           <div>
-            <div data-aos="fade-up" class="md:max-w-[252px] mt-12">
+            <div class="md:max-w-[252px] mt-12">
               <a href="#adquirir-treinamento" class="primary-btn py-4 px-6">
                 Garantir Acesso
                 <iconify-icon
@@ -203,15 +203,11 @@
     <section id="hub" class="bg-GRAY-800 py-[112px]">
       <div class="container">
         <div>
-          <h2
-            data-aos="fade-up"
-            class="head-text-primary text-head56 max-w-[580px]"
-          >
+          <h2 class="head-text-primary text-head56 max-w-[580px]">
             O ST6 é o Primeiro Hub de Day Trade do
             <b class="font-bold">Brasil.</b>
           </h2>
           <p
-            data-aos="fade-right"
             class="body-text-primary text-body18 max-w-[640px] mt-4 text-GRAY-400"
           >
             Um ambiente com ferramentas inovadoras e treinamento de excelência
@@ -219,22 +215,32 @@
           </p>
         </div>
 
-        <div class="swiper-container">
-          <div class="swiper-wrapper mt-[64px]"></div>
+        <div class="relative">
+          <div class="swiper-container">
+            <div class="swiper-wrapper mt-[64px]"></div>
+          </div>
+          <div
+            class="h-[208px] absolute top-[64px] w-full flex items-center justify-end"
+          >
+            <div
+              class="-mr-4 z-40 h-8 w-8 bg-BLUE-PRIMARY rounded-full grid place-content-center shadow-BLUE-PRIMARY hover:opacity-75 transition-all swiper-button-next-initial"
+            >
+              <iconify-icon
+                class="text-body18"
+                icon="radix-icons:chevron-right"
+              ></iconify-icon>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="indicadores" class="py-[112px]">
       <div class="container">
-        <h2
-          data-aos="fade-up"
-          class="head-text-primary text-head48 max-w-[640px]"
-        >
+        <h2 class="head-text-primary text-head48 max-w-[640px]">
           Praticamente uma Máquina de Fazer Dinheiro com Day Trade
         </h2>
         <p
-          data-aos="fade-right"
           class="font-HEAD font-light text-head24 text-white max-w-[720px] mt-6"
         >
           Confira os principais Setups com os Indicadores Proprietários da Six.
@@ -253,7 +259,7 @@
                 >NAVEGÁVEL</span
               >
               <ul class="mt-6 flex flex-col gap-3">
-                <li class="">
+                <li data-id="RAPTOR 6" class="indicator-btn-nav">
                   <a
                     href="#RAPTOR 6"
                     class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all"
@@ -265,7 +271,7 @@
                     RAPTOR 6
                   </a>
                 </li>
-                <li>
+                <li data-id="TEXAS 6" class="indicator-btn-nav">
                   <a
                     href="#TEXAS 6"
                     class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all"
@@ -277,7 +283,7 @@
                     TEXAS 6
                   </a>
                 </li>
-                <li>
+                <li data-id="SUPERNOVA 6" class="indicator-btn-nav">
                   <a
                     href="#SUPERNOVA 6"
                     class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all"
@@ -289,7 +295,7 @@
                     SUPERNOVA 6
                   </a>
                 </li>
-                <li>
+                <li data-id="ROUTE 6" class="indicator-btn-nav">
                   <a
                     href="#ROUTE 6"
                     class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all"
@@ -333,16 +339,12 @@
                       data-id="${
                       indicator.id
                     }"
-                      class="w-full flex items-center justify-center gap-6"
+                      class="container-toggle-visao border-[2px] border-GRAY-BORDER border-opacity-45 w-full flex items-center justify-center gap-6"
                     >
-                      <button
-                        class="font-btn font-bold text-GRAY-400 text-body16 opacity-75 indicator-btn transition-all"
-                      >
+                      <button class="visao-indicador transition-all">
                         Visão do indicador
                       </button>
-                      <button
-                        class="font-btn font-bold text-WHITE text-body16 bg-blue-primary px-4 py-2 rounded-md result-btn transition-all"
-                      >
+                      <button class="visao-resultado transition-all">
                         Ver Resultado
                       </button>
                     </div>
@@ -375,22 +377,19 @@
         <div
           class="margin-container-left max-w-[208px] w-full border-r-[1px] border-GRAY-BORDER-75 py-8"
         >
-          <h6 data-aos="fade-right" class="font-HEAD text-body14 text-WHITE">
+          <h6 class="font-HEAD text-body14 text-WHITE">
             Uma decisão muda tudo. Agora você pode fazer parte do ST6.
           </h6>
         </div>
         <div
           class="margin-container-right w-full pl-8 flex items-center justify-between"
         >
-          <p
-            data-aos="fade-right"
-            class="max-w-[540px] w-full text-body14 text-GRAY-400"
-          >
+          <p class="max-w-[540px] w-full text-body14 text-GRAY-400">
             O sucesso não é sobre se matar de estudar ou passar horas na frente
             do computador. É sobre tomar as decisões certas para ter os
             resultados que você deseja!
           </p>
-          <div data-aos="fade-left" class="md:max-w-[192px]">
+          <div class="md:max-w-[192px]">
             <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
               Garantir Acesso
               <iconify-icon
@@ -424,10 +423,7 @@
     <section class="py-[112px]">
       <div class="container">
         <div>
-          <h3
-            data-aos="fade-right"
-            class="head-text-primary text-WHITE text-head40"
-          >
+          <h3 class="head-text-primary text-WHITE text-head40">
             Alertas inteligentes no seu gráfico. <br />
             Menos Estresse. <br />
             Mais qualidade de vida.
@@ -486,17 +482,13 @@
     <section class="py-[112px]">
       <div class="container">
         <div class="max-w-[620px] w-full mx-auto">
-          <h3
-            data-aos="fade-up"
-            class="head-text-primary text-head40 text-center"
-          >
+          <h3 class="head-text-primary text-head40 text-center">
             Se você é iniciante no Day Trade e sofre por um dos motivos abaixo:
           </h3>
         </div>
         <div class="grid md:grid-cols-2 gap-8 mt-[112px]">
           <div
-            data-aos="fade-up"
-            class="w-full p-8 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
+            class="w-full px-6 py-4 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
           >
             <iconify-icon
               class="text-head24 text-RED-ALERT"
@@ -510,9 +502,7 @@
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="250"
-            class="w-full p-8 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
+            class="w-full px-6 py-4 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
           >
             <iconify-icon
               class="text-head24 text-RED-ALERT"
@@ -524,9 +514,7 @@
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            class="w-full p-8 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
+            class="w-full px-6 py-4 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
           >
             <iconify-icon
               class="text-head24 text-RED-ALERT"
@@ -540,9 +528,7 @@
             </p>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="750"
-            class="w-full p-8 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
+            class="w-full px-6 py-4 rounded-md bg-RED-ALERT bg-opacity-5 border-[1px] border-RED-ALERT flex flex-col gap-4"
           >
             <iconify-icon
               class="text-head24 text-RED-ALERT"
@@ -554,7 +540,7 @@
             </p>
           </div>
         </div>
-        <div data-aos="fade-up" class="max-w-[620px] w-full mx-auto mt-[112px]">
+        <div class="max-w-[620px] w-full mx-auto mt-[112px]">
           <h3 class="head-text-primary text-head56 text-center">
             Então o <span class="text-BLUE-PRIMARY">ST6</span> é para você.
           </h3>
@@ -565,18 +551,14 @@
     <section class="py-[112px] bg-GRAY-800">
       <div class="container">
         <div>
-          <div data-aos="fade-right">
+          <div>
             <span> RESULTADOS </span>
           </div>
-          <h3
-            data-aos="fade-up"
-            class="head-text-primary text-head40 text-start mt-6"
-          >
+          <h3 class="head-text-primary text-head40 text-start mt-6">
             Estratégias fáceis de aplicar, <br />
             Lucros consistentes
           </h3>
           <p
-            data-aos="fade-right"
             class="body-text-primary text-head24 text-start max-w-[784px] mt-6"
           >
             Veja o tipo de lucro que você pode ter com consistência a partir do
@@ -584,23 +566,24 @@
             correto e com a mentalidade de um Special Trader 6
           </p>
         </div>
-        <div class="mt-16">
-          <div class="swiper-strategies overflow-hidden">
-            <div class="swiper-wrapper ganhos-container"></div>
-          </div>
+      </div>
+      <div class="mt-16">
+        <div class="swiper-strategies-1 overflow-hidden">
+          <div class="swiper-wrapper ganhos-container-1"></div>
         </div>
-        <div data-aos="fade" class="max-w-[512px] mx-auto mt-16">
-          <p
-            class="body-text-primary text-head24 text-white font-light text-center leading-tight"
-          >
-            Todo resultado pode ser alcançado
-            <b class="font-bold">mais rápido </b> se você souber
-            <b class="font-bold">os atalhos</b> e colocar
-            <b class="font-bold"
-              >em prática aquilo que efetivamente funciona.</b
-            >
-          </p>
+        <div class="swiper-strategies-2 overflow-hidden mt-8">
+          <div class="swiper-wrapper ganhos-container-2"></div>
         </div>
+      </div>
+      <div class="max-w-[512px] mx-auto mt-16">
+        <p
+          class="body-text-primary text-head24 text-white font-light text-center leading-tight"
+        >
+          Todo resultado pode ser alcançado
+          <b class="font-bold">mais rápido </b> se você souber
+          <b class="font-bold">os atalhos</b> e colocar
+          <b class="font-bold">em prática aquilo que efetivamente funciona.</b>
+        </p>
       </div>
     </section>
 
@@ -608,7 +591,6 @@
       <div class="container">
         <div>
           <h3
-            data-aos="fade-right"
             class="head-text-primary text-head32 text-WHITE font-light max-w-[424px]"
           >
             Os 3 passos simples para sua Liberdade Financeira
@@ -616,7 +598,6 @@
         </div>
         <div class="grid md:grid-cols-3 gap-8 mt-16">
           <div
-            data-aos="fade-up"
             class="w-full md:max-w-[384px] rounded-md border-[1px] border-GRAY-BORDER-75"
           >
             <div class="flex border-b-[1px] border-b-GRAY-BORDER-75">
@@ -641,8 +622,6 @@
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="250"
             class="w-full md:max-w-[384px] rounded-md border-[1px] border-GRAY-BORDER-75"
           >
             <div class="flex border-b-[1px] border-b-GRAY-BORDER-75">
@@ -666,8 +645,6 @@
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            data-aos-delay="500"
             class="w-full md:max-w-[384px] rounded-md border-[1px] border-GRAY-BORDER-75"
           >
             <div class="flex border-b-[1px] border-b-GRAY-BORDER-75">
@@ -698,18 +675,16 @@
     <section class="py-[112px]">
       <div class="container">
         <div class="w-full max-w-[512px] mx-auto">
-          <div data-aos="fade-up" class="text-center">
+          <div class="text-center">
             <span>AULAS</span>
           </div>
           <h3
-            data-aos="fade-up"
             class="head-text-primary text-head48 text-WHITE font-light text-center mt-4"
           >
             Estas aulas e muito <br />
             mais estão no ST6
           </h3>
           <p
-            data-aos="fade-right"
             class="body-text-primary text-GRAY-400 text-body18 text-center mt-6"
           >
             A liberdade financeira pode ser fácil de ser conquistada quando se
@@ -751,11 +726,8 @@
     <section id="bônus" class="bg-GRAY-800 py-[112px]">
       <div class="container w-full">
         <div class="max-w-[762px] mx-auto flex flex-col items-center gap-4">
-          <span data-aos="fade-up" class="font-HEAD font-light text-WHITE"
-            >BÔNUS PROMOCIONAL</span
-          >
+          <span class="font-HEAD font-light text-WHITE">BÔNUS PROMOCIONAL</span>
           <h3
-            data-aos="fade-up"
             class="text-center max-w-[424px] font-HEAD font-semibold text-white text-head40"
           >
             Você ainda vai receber
@@ -778,11 +750,10 @@
             <div
               class="flex flex-col lg:flex-row items-center gap-3 lg:gap-8 mt-8 justify-center lg:justify-start"
             >
-              <span class="font-HEAD uppercase text-white"
+              <span class="font-HEAD uppercase text-GRAY-400"
                 >BÔNUS PROMOCIONAL</span
               >
               <span
-                data-aos="fade"
                 class="bg-[#1CA164] py-1 px-3 rounded-2xl font-HEAD font-semibold text-white uppercase text-center"
                 >Receba sem custos por 6 meses</span
               >
@@ -792,14 +763,12 @@
               class="mt-6 flex flex-col items-center lg:items-start justify-center lg:justify-start text-center lg:text-left"
             >
               <h4
-                data-aos="fade-right"
                 class="max-w-[424px] leading-tight font-HEAD font-semibold text-white text-head32 lg:text-head48"
               >
                 Nossa plataforma de planejamento
               </h4>
               <p
-                data-aos="fade-right"
-                class="font-HEAD font-normal text-body16 text-white max-w-[492px] mt-6"
+                class="text-GRAY-400 font-HEAD font-normal text-body16 max-w-[492px] mt-6"
               >
                 A TradingPro faz parte do grupo Six. É a plataforma número 1 da
                 América Latina para planejamento, organização e análise
@@ -807,7 +776,7 @@
                 você precisa de um software profissional de gestão de trading.
               </p>
             </div>
-            <div data-aos="fade-right" class="md:max-w-[252px] mt-12">
+            <div class="md:max-w-[252px] mt-12">
               <a href="#adquirir-treinamento" class="primary-btn py-4 px-6">
                 Garantir Acesso
                 <iconify-icon
@@ -817,10 +786,7 @@
               </a>
             </div>
           </div>
-          <div
-            data-aos="fade-left"
-            class="w-full max-w-[548px] hidden lg:block"
-          >
+          <div class="w-full max-w-[548px] hidden lg:block">
             <img src="./assets/plataforma-tradingpro.svg" alt="" srcset="" />
           </div>
         </div>
@@ -842,19 +808,19 @@
             </div>
             <ul class="flex flex-col gap-2 mt-4">
               <li
-                class="font-HEAD font-medium text-body18 text-white flex items-center gap-2"
+                class="font-HEAD font-medium text-body18 text-GRAY-400 flex items-center gap-2"
               >
                 <div class="h-1 w-1 bg-white rounded-full"></div>
                 Caderninho com garranchos
               </li>
               <li
-                class="font-HEAD font-medium text-body18 text-white flex items-center gap-2"
+                class="font-HEAD font-medium text-body18 text-GRAY-400 flex items-center gap-2"
               >
                 <div class="h-1 w-1 bg-white rounded-full"></div>
                 Planilhas complexas e confusas
               </li>
               <li
-                class="font-HEAD font-medium text-body18 text-white flex items-center gap-2"
+                class="font-HEAD font-medium text-body18 text-GRAY-400 flex items-center gap-2"
               >
                 <div class="h-1 w-1 bg-white rounded-full"></div>
                 Drives bagunçados
@@ -877,7 +843,7 @@
             </div>
             <ul class="flex flex-col gap-2 mt-4 list-none">
               <li
-                class="font-HEAD font-medium text-body18 text-white flex items-center gap-2 max-w-[300px]"
+                class="font-HEAD font-medium text-body18 text-GRAY-400 flex items-center gap-2 max-w-[300px]"
               >
                 Tudo organizado no mesmo lugar com todas informações que você
                 precisa para alavancar os resultados e subir para o próximo
@@ -892,17 +858,15 @@
     <section class="py-[112px]">
       <div class="container">
         <div class="w-full flex flex-col items-center">
-          <div data-aos="fade-up" class="text-center">
+          <div class="text-center">
             <span class="uppercase">Treinamento de opções de ações</span>
           </div>
           <h3
-            data-aos="fade-up"
             class="font-HEAD text-head48 text-WHITE font-semibold text-center mt-4"
           >
             THORP.
           </h3>
           <p
-            data-aos="fade-up"
             class="body-text-primary text-GRAY-400 text-body18 text-center mt-6 max-w-[484px]"
           >
             Um Treinamento Essencial de Opções de Ações com as melhores
@@ -911,7 +875,7 @@
           </p>
         </div>
         <div class="w-full flex justify-center mt-16">
-          <div data-aos="fade-right" class="max-w-[800px] w-full">
+          <div class="max-w-[800px] w-full">
             <img
               class="w-full rounded-md object-cover"
               src="./assets/thorp.png"
@@ -926,9 +890,8 @@
     <section id="mentor" class="py-[112px] w-full bg-GRAY-800">
       <div class="container">
         <div class="w-full flex items-center flex-col">
-          <div data-aos="fade-up"><span>MENTOR</span></div>
+          <div><span>MENTOR</span></div>
           <h2
-            data-aos="fade-up"
             class="head-text-primary text-head48 text-white max-w-[484px] mt-4"
           >
             Conheça o seu Mentor durante a Jornada ST6
@@ -936,7 +899,6 @@
         </div>
         <div class="flex items-start justify-between gap-16 mt-16">
           <div
-            data-aos="fade-up"
             class="bg-rafael-avelar bg-cover max-w-[384px] w-full relative pl-[72px] h-[384px] rounded-md overflow-hidden"
           >
             <div class="absolute bottom-6 left-6">
@@ -949,40 +911,77 @@
             </div>
           </div>
           <div class="w-full">
-            <strong
-              data-aos="fade-left"
-              class="font-semibold font-HEAD text-body20 uppercase"
+            <strong class="font-semibold font-HEAD text-body20 uppercase"
               >Feito por quem sabe de verdade!</strong
             >
-            <p
-              data-aos="fade-left"
-              class="body-text-primary text-body18 text-GRAY-400 mt-6"
-            >
-              De família humilde do interior de São Paulo, Rafael chegou a
-              trabalhar como office boy. Em 2009, conseguiu um estágio em uma
-              grande instituição financeira. Em 2011, foi efetivado em um dos
-              maiores bancos do mundo. Desde então, tirou certificações
-              financeiras de prestígio (CEA e CNPI-P), alcançou a consistência
-              de lucros no Day Trade e ajudou centenas de pessoas a mudar de
-              patamar financeiro com seu método de trading desenvolvido e
-              lapidado ao longo de 10 anos. Sua abordagem prática e
-              absolutamente simples é facilmente replicada por aqueles que
-              querem atingir a consistência de lucros no menor tempo possível.
-            </p>
+            <div class="flex flex-col gap-2">
+              <p class="body-text-primary text-body18 text-GRAY-400 mt-6">
+                De família humilde do interior de São Paulo, Rafael chegou a
+                trabalhar como office boy. Em 2009, conseguiu um estágio em uma
+                grande instituição financeira.
+              </p>
+              <p class="body-text-primary text-body18 text-GRAY-400 mt-6">
+                Em 2011, foi efetivado em um dos maiores bancos do mundo. Desde
+                então, tirou certificações financeiras de prestígio (CEA e
+                CNPI-P), alcançou a consistência de lucros no Day Trade e ajudou
+                centenas de pessoas a mudar de patamar financeiro com seu método
+                de trading desenvolvido e lapidado ao longo de 10 anos.
+              </p>
+              <p class="body-text-primary text-body18 text-GRAY-400 mt-6">
+                Sua abordagem prática e absolutamente simples é facilmente
+                replicada por aqueles que querem atingir a consistência de
+                lucros no menor tempo possível.
+              </p>
+            </div>
+            <div class="mt-6">
+              <ul class="flex items-center gap-4">
+                <li>
+                  <a
+                    class=""
+                    href="https://www.instagram.com/rafa_avelar/"
+                    target="_blank"
+                  >
+                    <iconify-icon
+                      class="text-GRAY-400 text-head24 group-hover:text-BLUE-PRIMARY hover:text-WHITE transition-all"
+                      icon="mdi:instagram"
+                    ></iconify-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://www.youtube.com/channel/UCqo1ae-d_1HzzOv3s_dkHCA"
+                    target="_blank"
+                  >
+                    <iconify-icon
+                      class="text-GRAY-400 text-head24 group-hover:text-BLUE-PRIMARY hover:text-WHITE transition-all"
+                      icon="mdi:youtube"
+                    ></iconify-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="mt-24">
           <div class="container flex justify-center">
-            <h5
-              data-aos="fade-up"
-              class="head-text-primary text-WHITE text-head32 text-center"
-            >
+            <h5 class="head-text-primary text-WHITE text-head32 text-center">
               O que estão falando do <br />
               conteúdo de <b class="font-bold">Rafael Avelar?</b>
             </h5>
           </div>
-          <div class="px-4 w-full swiper-depoimentos overflow-hidden mt-6">
-            <div class="swiper-wrapper container-slides-depoimentos"></div>
+
+          <div>
+            <div
+              class="px-4 w-full swiper-depoimentos-1 overflow-hidden mt-6 h-[148]"
+            >
+              <div class="swiper-wrapper container-slides-depoimentos-1"></div>
+            </div>
+            <div
+              class="px-4 w-full swiper-depoimentos-2 overflow-hidden mt-6 h-[148]"
+            >
+              <div class="swiper-wrapper container-slides-depoimentos-2"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -995,14 +994,12 @@
         <div>
           <img src="./assets/navy-seals-badge.png" alt="" srcset="" />
           <h4
-            data-aos="fade-left"
             class="font-HEAD text-head40 max-w-[348px] font-semibold leading-tight mt-4"
           >
             A elite da Bolsa <br />
             de Valores.
           </h4>
           <p
-            data-aos="fade-left"
             class="font-BODY text-body18 text-white max-w-[648px] mt-6 font-light"
           >
             O ST6 foi criado com base na filosofia dos Navy SEALs, a força de
@@ -1019,12 +1016,11 @@
             ou de baixa.
           </p>
           <p
-            data-aos="fade-left"
             class="font-BODY uppercase text-body18 text-white max-w-[648px] mt-6 font-semibold"
           >
             Eu chamo esses operadores de Special Traders 6.
           </p>
-          <div data-aos="fade-up" class="md:max-w-[252px] mt-12">
+          <div class="md:max-w-[252px] mt-12">
             <a href="#adquirir-treinamento" class="primary-btn py-4 px-6">
               Garantir Acesso
               <iconify-icon
@@ -1041,13 +1037,11 @@
       <div class="container">
         <div class="w-full flex flex-col items-center">
           <h3
-            data-aos="fade-up"
             class="font-HEAD text-head48 text-WHITE font-semibold text-center mt-4"
           >
             Invista na sua liberdade
           </h3>
           <p
-            data-aos="fade-up"
             class="body-text-primary text-GRAY-400 text-body18 text-center mt-6 max-w-[548px]"
           >
             Quanto custa a facilidade de ter os melhores indicadores fazendo
@@ -1057,11 +1051,10 @@
           </p>
         </div>
         <div
-          data-aos="fade-up"
           class="max-w-[800px] mx-auto w-full border-[1px] border-GRAY-BORDER-75 rounded-md mt-16"
         >
           <div
-            class="h-[84px] border-b-[1px] border-GRAY-BORDER-75 px-6 flex items-center justify-between"
+            class="h-[124px] border-b-[1px] border-GRAY-BORDER-75 px-6 flex items-center justify-between"
           >
             <p class="font-HEAD text-WHITE text-head24">
               Treinamento | Indicadores | Sistema de Gestão
@@ -1072,7 +1065,7 @@
               srcset=""
             />
           </div>
-          <div class="py-8">
+          <div class="py-16">
             <div class="w-full flex flex-col items-center gap-2">
               <span class="text-body14 text-GRAY-400 font-BODY"
                 >VALOR IMPERDÍVEL</span
@@ -1107,7 +1100,7 @@
                 >
               </div>
             </div>
-            <div class="px-8 mt-12">
+            <div class="px-8 mt-16">
               <div class="w-full">
                 <a
                   href="#adquirir-treinamento"
@@ -1136,7 +1129,7 @@
             </div>
           </div>
           <div
-            class="w-full border-t-[1px] border-GRAY-BORDER-75 rounded-md h-[84px] flex justify-center items-center gap-3"
+            class="w-full border-t-[1px] border-GRAY-BORDER-75 rounded-md h-[124px] flex justify-center items-center gap-3"
           >
             <iconify-icon
               class="text-WHITE text-body18"
@@ -1151,9 +1144,8 @@
     <section id="faq" class="py-[112px]">
       <div class="max-w-[968px] px-4 w-full mx-auto">
         <div class="flex flex-col items-center">
-          <div data-aos="fade-up"><span>FAQ</span></div>
+          <div><span>FAQ</span></div>
           <h2
-            data-aos="fade-up"
             class="head-text-primary text-head48 text-white max-w-[512px] text-center mt-4"
           >
             Dúvidas Frequentes sobre o Special Trader 6
@@ -1179,18 +1171,19 @@
           </div>
         </div>
         <div class="mt-16">
-          <h4
-            data-aos="fade-right"
-            class="head-text-primary text-head32 max-w-[484px]"
-          >
+          <h4 class="head-text-primary text-head32 max-w-[484px]">
             Se tiver mais alguma dúvida, entre em contato conosco. Estamos aqui
             para ajudar.
           </h4>
-          <div data-aos="fade-up" class="md:max-w-[192px] mt-6">
+          <div class="md:max-w-[224px] mt-6">
             <a
               href="https://api.whatsapp.com/send/?phone=5511979727524"
-              class="primary-btn py-3 px-4"
+              class="rounded-md flex items-center justify-center gap-3 bg-emerald-600 py-3 px-4 font-BTN font-bold"
             >
+              <iconify-icon
+                class="text-body18"
+                icon="ic:baseline-whatsapp"
+              ></iconify-icon>
               Entrar em contato
             </a>
           </div>
@@ -1294,17 +1287,7 @@
                         ></iconify-icon>
                       </a>
                     </li>
-                    <li>
-                      <a
-                        class="w-10 h-10 rounded-md bg-transparent border-[1px] border-GRAY-BORDER-75 grid place-content-center group hover:border-BLUE-PRIMARY transition-all"
-                        href="#"
-                      >
-                        <iconify-icon
-                          class="text-GRAY-400 text-head24 group-hover:text-BLUE-PRIMARY transition-all"
-                          icon="ri:linkedin-fill"
-                        ></iconify-icon>
-                      </a>
-                    </li>
+
                     <li>
                       <a
                         class="w-10 h-10 rounded-md bg-transparent border-[1px] border-GRAY-BORDER-75 grid place-content-center group hover:border-BLUE-PRIMARY transition-all"
@@ -1321,15 +1304,37 @@
                 </div>
               </div>
             </div>
-            <div>
-              <div class="md:max-w-[192px]">
-                <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
-                  Garantir Acesso
-                  <iconify-icon
-                    class="text-body18"
-                    icon="radix-icons:chevron-right"
-                  ></iconify-icon>
-                </a>
+            <div class="flex flex-col gap-12">
+              <div>
+                <p class="font-BODY text-sm14 text-WHITE uppercase font-medium">
+                  ADQUIRA O TREINAMENTO
+                </p>
+                <div class="md:max-w-[248px] mt-2">
+                  <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
+                    Garantir Acesso
+                    <iconify-icon
+                      class="text-body18"
+                      icon="radix-icons:chevron-right"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
+              <div>
+                <p class="font-BODY text-sm14 text-WHITE uppercase font-medium">
+                  AJUDA & SUPORTE
+                </p>
+                <div class="md:max-w-[248px] mt-2">
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=5511979727524"
+                    class="rounded-md font-BTN font-bold bg-emerald-600 flex items-center justify-center gap-3 py-3 px-4 hover:opacity-75 transition-all"
+                  >
+                    Entre em contato
+                    <iconify-icon
+                      class="text-body18"
+                      icon="ic:baseline-whatsapp"
+                    ></iconify-icon>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1410,25 +1415,56 @@
 
         // Navigation arrows
         navigation: {
-          nextEl: ".swiper-button-next",
+          nextEl: ".swiper-button-next-initial",
           prevEl: ".swiper-button-prev",
         },
       });
 
-      var swiper = new Swiper(".swiper-depoimentos", {
+      var swiper = new Swiper(".swiper-depoimentos-1", {
         direction: "horizontal",
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 24,
-        autoplay: true,
+        autoplay: {
+          delay: 0,
+        },
+        speed: 5000,
         loop: true,
       });
 
-      var swiper = new Swiper(".swiper-strategies", {
+      var swiper = new Swiper(".swiper-depoimentos-2", {
         direction: "horizontal",
         slidesPerView: 3,
+        spaceBetween: 24,
+        autoplay: {
+          speed: 5000,
+          reverseDirection: true,
+          delay: 0,
+        },
+        speed: 5000,
+        loop: true,
+      });
+
+      var swiper = new Swiper(".swiper-strategies-1", {
+        direction: "horizontal",
+        slidesPerView: 4,
+        spaceBetween: 24,
+        autoplay: {
+          delay: 0,
+        },
+        speed: 5000,
+        loop: true,
+      });
+
+      var swiper = new Swiper(".swiper-strategies-2", {
+        direction: "horizontal",
+        slidesPerView: 4,
         spaceBetween: 32,
         loop: true,
-        autoplay: true,
+        autoplay: {
+          reverseDirection: true,
+          delay: 0,
+        },
+        speed: 5000,
       });
 
       var swiper = new Swiper(".swiper-video-list", {

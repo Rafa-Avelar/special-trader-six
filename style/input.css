@@ -26,22 +26,50 @@ body {
   padding: 0 16px;
 }
 
-.primary-btn {
-  background-color: #4054ed;
-  color: #fff;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  border-radius: 4px;
-  width: 100%;
-  font-size: 1rem;
-
+.primary-btn,
+.primary-btn-inside {
+  color: #ffffff;
+  border-radius: 8px;
+  background: linear-gradient(-45deg, #4054ed, #358dff, #1b2cb1, #297cea);
+  background-size: 600%;
+  animation: anime 16s linear infinite;
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  font-family: "DM sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  gap: 8px;
+  transition: all 0.25s ease;
+  text-wrap: nowrap;
+}
 
-  transition: 0.25s all ease;
-  cursor: pointer;
+.primary-btn:hover {
+  gap: 16px;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .primary-btn:hover {
@@ -114,22 +142,40 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.vertical-absolute-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
 .accordion-item {
   overflow: hidden;
+  transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
 .accordion-body {
-  display: none;
   opacity: 0;
+  height: 0px;
   overflow: hidden;
+  transition: all 0.25s ease;
 }
 
-.accordion-body.show {
-  display: block;
+.accordion-active > .accordion-body {
+  animation: 0.25s all ease;
   opacity: 1;
-  overflow: hidden;
-  max-height: 400px;
+  height: fit-content;
+  overflow: visible;
+  margin-top: 24px;
+}
+
+.accordion-header > .accordion-chevron {
+  transition: all 0.25s ease;
+}
+
+.accordion-active > .accordion-header > .accordion-chevron {
+  rotate: 180deg !important;
 }
 
 .video-height {
@@ -180,4 +226,90 @@ body {
 .tab-content-image {
   background-size: cover; /* Ensure the image fits well */
   background-position: center;
+}
+
+.swiper-button-disabled {
+  cursor: not-allowed;
+  opacity: 0.5 !important;
+}
+
+.active-nav-indicator > a > div {
+  background-color: #179467 !important;
+  border-width: 0px !important;
+  box-shadow: 0px 0px 20px 4px #179467 !important;
+}
+
+.active-nav-indicator > a {
+  color: #ffffff;
+}
+
+.container-toggle-visao {
+  display: flex;
+  gap: 8px;
+  border: 1px solid #2f3133;
+  width: fit-content;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.visao-indicador {
+  width: 164px;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: "DM sans", sans-serif;
+  color: #95979d;
+  font-weight: 700;
+  transition: 0.25s all ease;
+}
+.visao-resultado {
+  width: 164px;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: "DM sans", sans-serif;
+  font-weight: 700;
+  transition: 0.25s all ease;
+  color: #95979d;
+  transition: 0.25s all ease;
+}
+
+.container-toggle-visao {
+  transition: 0.25s all ease;
+}
+
+.container-toggle-visao > .active {
+  background-color: #2f31336c;
+  color: #fff !important;
+  transition: 0.25s all ease;
+}
+
+.swiper-slide-initial-wrapper {
+  width: 100%;
+  max-width: 696px;
+  border: 1px solid #2f3133bf; /* Replace with your specific border color value */
+  padding: 32px;
+  border-radius: 4px;
+  height: 234px !important;
+}
+
+.ganhos-slide-card {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.ganhos-slide-card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+html::-webkit-scrollbar {
+  width: 6px;
+  background-color: #101115;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #2F3133;
+  border-radius: 100px;
 }

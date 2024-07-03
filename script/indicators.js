@@ -24,7 +24,7 @@ const indicators = [
   },
   {
     id: 3,
-    name: "Supernova 6",
+    name: "SUPERNOVA 6",
     description: [
       "Essa ferramenta poderosa captura a reversão de tendencia de curto prazo e gera sinais certeiros de forma simples e intuitiva. Com a técnica contrarian e equilíbrio perfeito entre taxa de acerto e payoff, a Supernova 6 traz clareza para suas decisões, proporcionando tranquilidade e confiança na execução dos seus trades.",
     ],
@@ -52,7 +52,7 @@ function generateIndicatorComponent(indicator) {
   return `
     <div id='${
       indicator.name
-    }' class="border-b-[1px] border-GRAY-BORDER-75 w-full last:border-b-[0px]">
+    }' class="section-content border-b-[1px] border-GRAY-BORDER-75 w-full last:border-b-[0px]">
       <div class="w-full padding-container-right">
         <div class="py-[148px] pl-[48px] w-full flex flex-row items-start justify-between gap-8">
           <div class="w-full">
@@ -74,18 +74,14 @@ function generateIndicatorComponent(indicator) {
           <div class="w-full lg:max-w-[484px] flex flex-col items-center">
             <div data-id="${
               indicator.id
-            }" class="w-full flex items-center justify-center gap-6">
-              <button data-type="indicator-btn" class="font-btn font-bold  text-body16 transition-all ${
-                indicator.activeButton === "indicator"
-                  ? "opacity-100 text-WHITE"
-                  : "opacity-75 text-GRAY-400"
+            }" class="container-toggle-visao w-full flex items-center justify-center gap-6">
+              <button data-type="indicator-btn" class="visao-indicador indicator-btn transition-all ${
+                indicator.activeButton === "indicator" && "active"
               } indicator-btn">
                 Visão do indicador
               </button>
-              <button data-type="result-btn" class="font-btn font-bold  text-body16 bg-blue-primary px-4 py-2 rounded-md result-btn transition-all ${
-                indicator.activeButton === "result"
-                  ? "opacity-100 text-WHITE"
-                  : "opacity-75 text-GRAY-400"
+              <button data-type="result-btn" class="visao-resultado result-btn transition-all ${
+                indicator.activeButton === "result" && "active"
               }">
                 Ver Resultado
               </button>
@@ -178,3 +174,31 @@ function renderIndicators() {
 
 // Initial render
 renderIndicators();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".section-content");
+  const indicators = document.querySelectorAll(".indicator-btn-nav");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log(entry.target);
+          indicators.forEach((indicator) => {
+            if (indicator.dataset.id === entry.target.id) {
+              indicator.classList.add("active-nav-indicator");
+            } else {
+              indicator.classList.remove("active-nav-indicator");
+            }
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.6, // Adjust this value to determine how much of the section should be visible before triggering
+    }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});

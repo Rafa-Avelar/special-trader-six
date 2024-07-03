@@ -55,7 +55,61 @@ const accordionData = [
   },
 ];
 
-function createAccordionItem(item) {
+const addAccordionFunction = () => {
+  const accordion = document.querySelectorAll(".accordion-item");
+  const accordionVisibleClass = "accordion-active";
+
+  const accordionHandleClick = (e) => {
+    const accItem = e.currentTarget;
+    const alreadyHasActive = accItem.classList.contains(accordionVisibleClass);
+    if (alreadyHasActive) {
+      accItem.classList.remove(accordionVisibleClass);
+    } else {
+      accordion.forEach((item) => {
+        item.classList.remove(accordionVisibleClass);
+      });
+      accItem.classList.add(accordionVisibleClass);
+    }
+  };
+
+  accordion.forEach((accItem) => {
+    accItem.addEventListener("click", accordionHandleClick);
+  });
+};
+
+const generateAccordionList = () => {
+  const accordionList = document.querySelector(".accordion-wrapper");
+  accordionList.innerHTML = "";
+
+  accordionData.forEach((item) => {
+    const accHtml = `<div
+            id="accordion-id-${item.id}"
+            class="hover:opacity-75 transition-all accordion-item cursor-pointer flex flex-col  p-6 rounded-lg border-[1px] border-GRAY-BORDER-75 accordion-item"
+          >
+            <div class="accordion-header flex items-center justify-between">
+              <p class="font-HEAD font-medium text-body18 text-WHITE pointer-events-none">
+                ${item.header}
+              </p>
+              <iconify-icon
+                class="text-body18 text-GRAY-400 pointer-events-none accordion-chevron"
+                icon="radix-icons:chevron-up"
+              ></iconify-icon>
+            </div>
+            <div class="accordion-body">
+              <p class="font-HEAD font-light text-body18 text-WHITE pointer-events-none">
+                ${item.body}
+              </p>
+            </div>
+          </div>`;
+
+    accordionList.innerHTML += accHtml;
+  });
+
+  addAccordionFunction();
+};
+
+generateAccordionList();
+/* function createAccordionItem(item) {
   const wrapper = document.createElement("div");
   wrapper.dataset.aos = "fade-up";
 
@@ -101,3 +155,4 @@ document.addEventListener("DOMContentLoaded", () => {
     accordionWrapper.appendChild(accordionItem);
   });
 });
+ */

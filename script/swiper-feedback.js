@@ -13,24 +13,47 @@ const imageLinks = [
   "./assets/depoimento-12.png",
 ];
 
+// Function to shuffle an array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 // Function to create and insert swiper slides
 function insertSwiperSlides() {
-  const container = document.querySelector(".container-slides-depoimentos"); // Assuming your swiper container has the class 'swiper-wrapper'
+  const containerOne = document.querySelector(".container-slides-depoimentos-1");
+  const containerTwo = document.querySelector(".container-slides-depoimentos-2");
 
-  for (let i = 0; i < imageLinks.length; i++) {
-    const slide = document.createElement("div");
-    slide.classList.add("swiper-slide");
+  // Shuffle the imageLinks array
+  shuffleArray(imageLinks);
 
-    const img = document.createElement("img");
-    img.classList.add("w-full");
-    img.src = imageLinks[i];
-    img.alt = `depoimento-${i + 1}`;
+  // Split the array into two parts
+  const half = Math.ceil(imageLinks.length / 2);
+  const firstHalf = imageLinks.slice(0, half);
+  const secondHalf = imageLinks.slice(half);
 
-    slide.appendChild(img);
-    container.appendChild(slide);
+  // Function to create slides
+  function createSlides(container, links) {
+    links.forEach((link, index) => {
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide", "swiper-slide-custom"); // Add the custom class
+
+      const img = document.createElement("img");
+      img.classList.add("w-full");
+      img.src = link;
+      img.alt = `depoimento-${index + 1}`;
+
+      slide.appendChild(img);
+      container.appendChild(slide);
+    });
   }
+
+  // Create slides for both containers
+  createSlides(containerOne, firstHalf);
+  createSlides(containerTwo, secondHalf);
 }
 
 // Call the function to insert the slides
 insertSwiperSlides();
-

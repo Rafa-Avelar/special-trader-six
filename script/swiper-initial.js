@@ -25,8 +25,7 @@ const slideData = [
 
 function createSlide(data) {
   const slide = document.createElement("div");
-  slide.className =
-    "swiper-slide w-full max-w-[696px] border-GRAY-BORDER-75 border-[1px] p-8 rounded-[4px]";
+  slide.className = "swiper-slide swiper-slide-initial-wrapper";
 
   slide.innerHTML = `
     <h6 class="font-HEAD font-bold text-head24">${data.title}</h6>
@@ -42,7 +41,7 @@ function createSlide(data) {
         >
           Ver indicadores
         </a></div>`
-        : "<div class='mt-4'><br/></div>"
+        : ""
     }
   `;
 

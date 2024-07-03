@@ -11,24 +11,46 @@ const depoimentosLinks = [
   "./assets/ganhos-e-agradecimentos-10.png",
 ];
 
+// Function to shuffle an array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 // Function to create and insert swiper slides
 function insertSwiperSlidesDepo() {
-  const container = document.querySelector(".ganhos-container"); // Assuming your swiper container has the class 'swiper-wrapper'
+  const containerOne = document.querySelector(".ganhos-container-1");
+  const containerTwo = document.querySelector(".ganhos-container-2");
 
-  for (let i = 0; i < depoimentosLinks.length; i++) {
-    const slide = document.createElement("div");
-    slide.classList.add("swiper-slide");
-    slide.classList.add("rounded-md");
+  // Shuffle the depoimentosLinks array
+  shuffleArray(depoimentosLinks);
 
-    const img = document.createElement("img");
-    img.classList.add("w-full");
-    img.classList.add("overflow-hidden");
-    img.src = depoimentosLinks[i];
-    img.alt = `depoimento-${i + 1}`;
+  // Split the array into two parts
+  const half = Math.ceil(depoimentosLinks.length / 2);
+  const firstHalf = depoimentosLinks.slice(0, half);
+  const secondHalf = depoimentosLinks.slice(half);
 
-    slide.appendChild(img);
-    container.appendChild(slide);
+  // Function to create slides
+  function createSlides(container, links) {
+    links.forEach((link, index) => {
+      const slide = document.createElement("div");
+      slide.classList.add("swiper-slide", "rounded-md", "ganhos-slide-card");
+
+      const img = document.createElement("img");
+      img.classList.add("w-full", "overflow-hidden");
+      img.src = link;
+      img.alt = `depoimento-${index + 1}`;
+
+      slide.appendChild(img);
+      container.appendChild(slide);
+    });
   }
+
+  // Create slides for both containers
+  createSlides(containerOne, firstHalf);
+  createSlides(containerTwo, secondHalf);
 }
 
 // Call the function to insert the slides
