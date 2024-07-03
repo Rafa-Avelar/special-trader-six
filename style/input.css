@@ -30,7 +30,7 @@ body {
 .primary-btn-inside {
   color: #ffffff;
   border-radius: 8px;
-  background: linear-gradient(-45deg, #4054ed, #358dff, #1b2cb1, #297cea);
+  background: linear-gradient(-45deg, #4054ed, #5519e3, #297cea);
   background-size: 600%;
   animation: anime 16s linear infinite;
   display: flex;
@@ -44,6 +44,11 @@ body {
   text-wrap: nowrap;
 }
 
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
 .primary-btn:hover {
   gap: 16px;
 }
@@ -310,6 +315,6 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #2F3133;
+  background: #2f3133;
   border-radius: 100px;
 }

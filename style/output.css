@@ -1431,7 +1431,7 @@ body {
 .primary-btn-inside {
   color: #ffffff;
   border-radius: 8px;
-  background: linear-gradient(-45deg, #4054ed, #358dff, #1b2cb1, #297cea);
+  background: linear-gradient(-45deg, #4054ed, #5519e3, #297cea);
   background-size: 600%;
   animation: anime 16s linear infinite;
   display: flex;
@@ -1443,6 +1443,10 @@ body {
   gap: 8px;
   transition: all 0.25s ease;
   text-wrap: nowrap;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
 .primary-btn:hover {
@@ -1717,7 +1721,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #2F3133;
+  background: #2f3133;
   border-radius: 100px;
 }
 

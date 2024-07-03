@@ -568,11 +568,8 @@
         </div>
       </div>
       <div class="mt-16">
-        <div class="swiper-strategies-1 overflow-hidden">
+        <div class="swiper-strategies overflow-hidden">
           <div class="swiper-wrapper ganhos-container-1"></div>
-        </div>
-        <div class="swiper-strategies-2 overflow-hidden mt-8">
-          <div class="swiper-wrapper ganhos-container-2"></div>
         </div>
       </div>
       <div class="max-w-[512px] mx-auto mt-16">
@@ -970,19 +967,13 @@
               conteúdo de <b class="font-bold">Rafael Avelar?</b>
             </h5>
           </div>
-
-          <div>
-            <div
-              class="px-4 w-full swiper-depoimentos-1 overflow-hidden mt-6 h-[148]"
-            >
-              <div class="swiper-wrapper container-slides-depoimentos-1"></div>
-            </div>
-            <div
-              class="px-4 w-full swiper-depoimentos-2 overflow-hidden mt-6 h-[148]"
-            >
-              <div class="swiper-wrapper container-slides-depoimentos-2"></div>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="px-4 w-full swiper-depoimentos overflow-hidden mt-6 h-[148]"
+        >
+          <div class="swiper-wrapper container-slides-depoimentos"></div>
         </div>
       </div>
     </section>
@@ -1420,51 +1411,36 @@
         },
       });
 
-      var swiper = new Swiper(".swiper-depoimentos-1", {
-        direction: "horizontal",
-        slidesPerView: 3,
-        spaceBetween: 24,
-        autoplay: {
-          delay: 0,
-        },
-        speed: 5000,
+      var swiper = new Swiper(".swiper-depoimentos", {
         loop: true,
+        freeMode: true,
+        spaceBetween: 24,
+        grabCursor: true,
+        slidesPerView: 4.5,
+        loop: true,
+        autoplay: {
+          delay: 1,
+          disableOnInteraction: true,
+        },
+        freeMode: true,
+        speed: 5000,
+        freeModeMomentum: false,
       });
 
-      var swiper = new Swiper(".swiper-depoimentos-2", {
-        direction: "horizontal",
-        slidesPerView: 3,
+      var swiper = new Swiper(".swiper-strategies", {
+        loop: true,
+        freeMode: true,
         spaceBetween: 24,
-        autoplay: {
-          speed: 5000,
-          reverseDirection: true,
-          delay: 0,
-        },
-        speed: 5000,
-        loop: true,
-      });
-
-      var swiper = new Swiper(".swiper-strategies-1", {
-        direction: "horizontal",
-        slidesPerView: 4,
-        spaceBetween: 24,
-        autoplay: {
-          delay: 0,
-        },
-        speed: 5000,
-        loop: true,
-      });
-
-      var swiper = new Swiper(".swiper-strategies-2", {
-        direction: "horizontal",
-        slidesPerView: 4,
-        spaceBetween: 32,
+        grabCursor: true,
+        slidesPerView: 4.5,
         loop: true,
         autoplay: {
-          reverseDirection: true,
-          delay: 0,
+          delay: 1,
+          disableOnInteraction: true,
         },
+        freeMode: true,
         speed: 5000,
+        freeModeMomentum: false,
       });
 
       var swiper = new Swiper(".swiper-video-list", {

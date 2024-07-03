@@ -23,8 +23,7 @@ function shuffleArray(array) {
 
 // Function to create and insert swiper slides
 function insertSwiperSlides() {
-  const containerOne = document.querySelector(".container-slides-depoimentos-1");
-  const containerTwo = document.querySelector(".container-slides-depoimentos-2");
+  const containerOne = document.querySelector(".container-slides-depoimentos");
 
   // Shuffle the imageLinks array
   shuffleArray(imageLinks);
@@ -51,8 +50,7 @@ function insertSwiperSlides() {
   }
 
   // Create slides for both containers
-  createSlides(containerOne, firstHalf);
-  createSlides(containerTwo, secondHalf);
+  createSlides(containerOne, imageLinks);
 }
 
 // Call the function to insert the slides
