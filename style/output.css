@@ -834,6 +834,18 @@ video {
   height: 640px;
 }
 
+.h-\[684px\] {
+  height: 684px;
+}
+
+.h-\[56px\] {
+  height: 56px;
+}
+
+.h-\[564px\] {
+  height: 564px;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -1872,6 +1884,10 @@ html::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
+  .md\:h-\[684px\] {
+    height: 684px;
+  }
+
   .md\:max-w-\[192px\] {
     max-width: 192px;
   }
