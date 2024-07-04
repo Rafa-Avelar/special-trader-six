@@ -46,7 +46,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header
@@ -63,7 +62,7 @@
               />
             </a>
           </div>
-          <ul class="flex items-center gap-6">
+          <ul class="hidden md:flex items-center gap-6">
             <li>
               <a
                 class="text-sm14 font-BODY font-light text-WHITE hover:opacity-25 transition-all"
@@ -143,19 +142,21 @@
       <div class="container h-[800px] flex items-center">
         <div>
           <div>
-            <span class="font-HEAD font-light text-body16 text-WHITE"
-              >O HUB QUE PODE FAZER DE VOCÊ UM MILIONÁRIO!</span
+            <p
+              class="text-center md:text-start font-HEAD font-light text-body16 text-WHITE"
             >
+              O HUB QUE PODE FAZER DE VOCÊ UM MILIONÁRIO!
+            </p>
           </div>
           <h1
-            class="mt-4 text-head48 text-white font-HEAD font-normal leading-tight"
+            class="text-center md:text-start mt-4 text-head32 md:text-head48 text-white font-HEAD font-normal leading-tight"
           >
             Apenas 1 hora por dia para <br />
             buscar <span class="font-SPECIAL italic">R$</span>
             <b>20.000 por mês.</b>
           </h1>
           <p
-            class="font-BODY font-light text-body18 text-WHITE md:max-w-[474px] mt-[18px]"
+            class="text-center md:text-start font-BODY font-light text-body18 text-WHITE md:max-w-[474px] mt-[18px]"
           >
             Descubra as técnicas e ferramentas exclusivas capazes de transformar
             para sempre o seu patamar financeiro
@@ -329,7 +330,9 @@
     <section id="hub" class="bg-GRAY-800 py-[112px]">
       <div class="container">
         <div>
-          <h2 class="head-text-primary text-head56 max-w-[580px]">
+          <h2
+            class="head-text-primary text-head40 md:text-head56 max-w-[580px]"
+          >
             O ST6 é o Primeiro Hub de Day Trade do
             <b class="font-bold">Brasil.</b>
           </h2>
@@ -363,7 +366,7 @@
 
     <section id="indicadores" class="py-[112px]">
       <div class="container">
-        <h2 class="head-text-primary text-head48 max-w-[640px]">
+        <h2 class="head-text-primary text-head40 md:text-head48 max-w-[640px]">
           Praticamente uma Máquina de Fazer Dinheiro com Day Trade
         </h2>
         <p
@@ -374,7 +377,7 @@
       </div>
       <div class="border-t-[1px] border-GRAY-BORDER-75 mt-[84px]">
         <div
-          class="grid-indicadores-wrapper border-b-[1px] border-GRAY-BORDER-75"
+          class="flex flex-col md:flex-row border-b-[1px] border-GRAY-BORDER-75"
         >
           <div
             class="border-r-[1px] border-GRAY-BORDER-75 margin-container-left w-full max-w-[208px] py-[40px]"
@@ -436,11 +439,12 @@
               </ul>
             </div>
           </div>
+
           <div class="w-full overflow-hidden indicadores-container">
             <div class="border-b-[1px] border-GRAY-BORDER-75 w-full">
               <div class="w-full padding-container-right">
                 <div
-                  class="py-[148px] pl-[48px] w-full flex flex-row items-start justify-between gap-8"
+                  class="md:py-[148px] py-[84px] pl-4 pr-4 md:pr-0 md:pl-12 w-full flex flex-row items-start justify-between gap-8"
                 >
                   <div class="w-full">
                     <h4
@@ -531,7 +535,7 @@
     <!-- Modal -->
     <div
       id="imageModal"
-      class="bg-BLACK bg-opacity-75 hidden fixed top-0 right-0 left-0 bottom-0 w-full h-full z-50 overflow-y-auto transition-all"
+      class="bg-BLACK bg-opacity-75 hidden fixed top-0 right-0 left-0 bottom-0 w-full h-full z-50 overflow-y-auto transition-all px-4"
     >
       <div class="fixed top-6 right-6">
         <button id="closeModal">
@@ -576,7 +580,9 @@
               </p>
             </button>
           </div>
-          <div class="tab-content-container mt-12 flex items-start gap-12">
+          <div
+            class="tab-content-container mt-12 flex flex-col md:flex-row items-start gap-12"
+          >
             <div
               class="w-full max-w-[484px] h-[284px] rounded-md bg-GRAY-BORDER-75"
             >
@@ -667,7 +673,7 @@
           </div>
         </div>
         <div class="max-w-[620px] w-full mx-auto mt-[112px]">
-          <h3 class="head-text-primary text-head56 text-center">
+          <h3 class="head-text-primary text-head40 md:text-head56 text-center">
             Então o <span class="text-BLUE-PRIMARY">ST6</span> é para você.
           </h3>
         </div>
@@ -837,9 +843,11 @@
             <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
 
-          <div class="relative w-full h-[164px] mt-8 overflow-hidden">
+          <div
+            class="flex items-center flex-col md:flex-row w-full mt-8 overflow-hidden"
+          >
             <div
-              class="absolute h-[164px] max-w-[280px] w-full bg-BLUE-PRIMARY rounded-md p-6 flex flex-col justify-between"
+              class="h-[164px] md:max-w-[280px] w-full bg-BLUE-PRIMARY rounded-md p-6 flex flex-col justify-between"
             >
               <div class="w-full">
                 <p
@@ -858,7 +866,7 @@
               </div>
             </div>
             <div
-              class="swiper-video-list w-full h-full ml-[304px] overflow-hidden"
+              class="h-[164px] swiper-video-list w-full mt-8 md:mt-0 md:ml-6 overflow-hidden"
             >
               <div class="swiper-wrapper video-list-container w-full">
                 <div
@@ -1263,7 +1271,9 @@
             Conheça o seu Mentor durante a Jornada ST6
           </h2>
         </div>
-        <div class="flex items-start justify-between gap-16 mt-16">
+        <div
+          class="flex items-start flex-col md:flex-row justify-between gap-16 mt-16"
+        >
           <div
             class="bg-rafael-avelar bg-cover max-w-[384px] w-full relative pl-[72px] h-[384px] rounded-md overflow-hidden"
           >
@@ -1471,7 +1481,9 @@
                   ></iconify-icon>
                 </a>
               </div>
-              <div class="w-full flex justify-center items-center gap-4 mt-8">
+              <div
+                class="w-full flex flex-col md:flex-row justify-center items-center gap-4 mt-8"
+              >
                 <span>Pague com</span>
                 <div class="flex justify-center items-center gap-4">
                   <img src="./assets/pix.svg" alt="Pix" srcset="" />
@@ -1504,7 +1516,7 @@
         <div class="flex flex-col items-center">
           <div><span>FAQ</span></div>
           <h2
-            class="head-text-primary text-head48 text-white max-w-[512px] text-center mt-4"
+            class="head-text-primary text-head40 md:text-head48 text-white max-w-[512px] text-center mt-4"
           >
             Dúvidas Frequentes sobre o Special Trader 6
           </h2>
@@ -1552,7 +1564,7 @@
     <footer>
       <div class="container">
         <div class="w-full py-[72px]">
-          <div class="flex items-start justify-between">
+          <div class="flex items-start flex-col md:flex-row justify-between">
             <div>
               <a href="#início">
                 <img
@@ -1568,7 +1580,7 @@
                 em <span class="uppercase text-WHITE">SPECIAL TRADERS 6.</span>
               </p>
             </div>
-            <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-8 mt-12 md:mt-0">
               <div>
                 <span
                   class="uppercase text-body14 font-BODY text-GRAY-400 font-medium"
@@ -1662,12 +1674,12 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-col gap-12">
+            <div class="flex flex-col gap-12 mt-12 md:mt-0">
               <div>
                 <p class="font-BODY text-sm14 text-WHITE uppercase font-medium">
                   ADQUIRA O TREINAMENTO
                 </p>
-                <div class="md:max-w-[248px] mt-2">
+                <div class="w-full md:max-w-[248px] mt-2">
                   <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
                     Garantir Acesso
                     <iconify-icon
@@ -1681,7 +1693,7 @@
                 <p class="font-BODY text-sm14 text-WHITE uppercase font-medium">
                   AJUDA & SUPORTE
                 </p>
-                <div class="md:max-w-[248px] mt-2">
+                <div class="w-full md:max-w-[248px] mt-2">
                   <a
                     href="https://api.whatsapp.com/send/?phone=5511979727524"
                     class="rounded-md font-BTN font-bold bg-emerald-600 flex items-center justify-center gap-3 py-3 px-4 hover:opacity-75 transition-all"
@@ -1696,7 +1708,9 @@
               </div>
             </div>
           </div>
-          <div class="w-full flex items-center justify-between mt-16">
+          <div
+            class="w-full flex items-center flex-col md:flex-row justify-between md:mt-16 mt-[112px]"
+          >
             <a href="">
               <img
                 src="./assets/LOGO_SIX_TRADING.svg"
@@ -1704,7 +1718,7 @@
                 srcset=""
               />
             </a>
-            <div class="flex items-center gap-6">
+            <div class="flex items-center gap-6 mt-12 md:mt-0">
               <a
                 href=""
                 class="cursor-pointer font-BODY text-WHITE text-body16 underline font-light"
@@ -1735,7 +1749,7 @@
             </p>
           </div>
           <div class="w-full flex justify-center mt-16">
-            <p class="font-HEAD text-WHITE text-body16 font-normal">
+            <p class="font-HEAD text-WHITE text-body16 font-normal text-center">
               © 2023 Six Hub Investimentos Ltda. Todos os direitos reservados.
               CNPJ: 44.647.406/0001-36
             </p>
@@ -1754,11 +1768,9 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-      AOS.init();
 
       var swiper = new Swiper(".swiper-container", {
         direction: "horizontal",
@@ -1776,12 +1788,29 @@
           nextEl: ".swiper-button-next-initial",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          1024: {
+            slidesPerView: 1.25,
+            spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+          },
+          348: {
+            slidesPerView: 1.1,
+            spaceBetween: 24,
+          },
+        },
       });
 
       var swiper = new Swiper(".swiper-depoimentos", {
         loop: true,
         freeMode: true,
-        spaceBetween: 24,
         grabCursor: true,
         slidesPerView: 4.5,
         loop: true,
@@ -1792,6 +1821,24 @@
         freeMode: true,
         speed: 8000,
         freeModeMomentum: false,
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 24,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+          },
+          348: {
+            slidesPerView: 1,
+            spaceBetween: 24,
+          },
+        },
       });
 
       var swiper = new Swiper(".swiper-strategies", {
@@ -1799,7 +1846,6 @@
         freeMode: true,
         spaceBetween: 24,
         grabCursor: true,
-        slidesPerView: 3,
         loop: true,
         autoplay: {
           delay: 1,
@@ -1808,14 +1854,26 @@
         freeMode: true,
         speed: 8000,
         freeModeMomentum: false,
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+          },
+        },
       });
 
       var swiper = new Swiper(".swiper-video-list", {
         loop: true,
         freeMode: true,
-        spaceBetween: 24,
         grabCursor: true,
-        slidesPerView: 3,
         loop: true,
         autoplay: {
           delay: 1,
@@ -1824,6 +1882,22 @@
         freeMode: true,
         speed: 8000,
         freeModeMomentum: false,
+        spaceBetween: 24,
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+          },
+        },
       });
     </script>
   </body>

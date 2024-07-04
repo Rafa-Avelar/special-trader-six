@@ -112,9 +112,7 @@ body {
   opacity: 0.5;
 } */
 
-.grid-indicadores-wrapper {
-  display: flex;
-}
+
 
 .margin-container-right {
   margin-right: calc((100vw - 1216px) / 2);

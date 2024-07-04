@@ -54,7 +54,7 @@ function generateIndicatorComponent(indicator) {
       indicator.name
     }' class="section-content border-b-[1px] border-GRAY-BORDER-75 w-full last:border-b-[0px]">
       <div class="w-full padding-container-right">
-        <div class="py-[148px] pl-[48px] w-full flex flex-row items-start justify-between gap-8">
+        <div class="md:py-[148px] py-[84px] pl-4 pr-4 md:pr-0 md:pl-12 w-full flex flex-col md:flex-row items-start justify-between gap-8">
           <div class="w-full">
             <h4 class="head-text-primary text-head48 uppercase font-head font-light">
               ${indicator.name}
