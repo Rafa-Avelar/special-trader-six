@@ -45,7 +45,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
   </head>
   <body>
     <header
@@ -139,8 +138,10 @@
     </header>
 
     <main id="início" class="mt-[80px]">
-      <div class="container h-[800px] flex items-center">
-        <div>
+      <div
+        class="container md:h-[800px] flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="mt-12 md:mt-0">
           <div>
             <p
               class="text-center md:text-start font-HEAD font-light text-body16 text-WHITE"
@@ -173,12 +174,77 @@
             </div>
           </div>
         </div>
-        <div></div>
+        <div
+          class="mt-12 md:mt-0 order-first md:order-2 relative w-full md:max-w-[524px] bg-GRAY-800 h-[312px] rounded-md bg-thumb bg-cover overflow-hidden"
+        >
+          <div
+            class="absolute top-0 bottom-0 right-0 left-0 bg-GRAY-800 bg-opacity-90 grid place-content-center"
+          >
+            <div
+              id="video-container"
+              class="flex flex-col items-center justify-center"
+            >
+              <div class="h-[148px] w-full grid place-content-center">
+                <div
+                  id="open-modal"
+                  class="cursor-pointer group hover:h-[96px] hover:w-[96px] transition-all border-[1px] bg-transparent h-[72px] w-[72px] grid place-content-center border-GRAY-BORDER-75 rounded-full"
+                >
+                  <div
+                    class="bg-GRAY-BORDER-75 h-14 w-14 rounded-full grid place-content-center group-hover:bg-BLUE-PRIMARY transition-all"
+                  >
+                    <iconify-icon
+                      class="text-head32 text-WHITE transition-all"
+                      icon="mdi:play"
+                    ></iconify-icon>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img src="./assets/st6-label.svg" alt="" srcset="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
+    <!-- Modal Structure -->
+    <div
+      id="video-modal"
+      class="hidden bg-black fixed top-0 right-0 left-0 bottom-0 bg-opacity-75 z-50"
+    >
+      <div class="w-full h-full grid place-content-center">
+        <button
+          id="close-modal"
+          class="absolute p-8 right-0 top-0 hover:opacity-65 transition-all"
+        >
+          <iconify-icon
+            class="text-head24"
+            icon="material-symbols:close"
+          ></iconify-icon>
+        </button>
+        <div class="relative rounded-lg w-full">
+          <div
+            class="aspect-w-16 aspect-h-9 bg-purple-500 w-screen h-[348px] md:w-[800px] md:h-[450px]"
+          >
+            <iframe
+              id="youtube-video"
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/l8FqHLjcRJ0?si=Hd_0TUasHl42OVqg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container md:mt-0 mt-[124px]">
       <div class="tradingview-widget-container__widget"></div>
       <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> -->
       <script
@@ -1759,6 +1825,7 @@
     </footer>
 
     <script src="./script/accordion.js"></script>
+    <script src="./script/heroVideo.js"></script>
     <script src="./script/indicators.js"></script>
     <script src="./script/swiper-earnings.js"></script>
     <script src="./script/swiper-feedback.js"></script>
@@ -1767,11 +1834,10 @@
     <script src="./script/tab.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
 
     <!-- Initialize Swiper -->
     <script>
-
       var swiper = new Swiper(".swiper-container", {
         direction: "horizontal",
         slidesPerView: 1.5,

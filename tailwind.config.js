@@ -47,6 +47,7 @@ module.exports = {
       backgroundImage: {
         "navy-seals": "url('/assets/navy-seals-bg.png')",
         "rafael-avelar": "url('/assets/mentor.jpg')",
+        thumb: "url('/assets/video-thumb.jpg')",
       },
     },
   },
