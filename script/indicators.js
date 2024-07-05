@@ -13,7 +13,7 @@ const indicators = [
   },
   {
     id: 2,
-    name: "TEXAS 6",
+    name: "Lone Star State",
     description: [
       "Inspirado na essência do Lone Star State e historicamente lucrativo, o Texas 6 traz robustez em um conceito de plotagem diferente, frequentemente gerando sinais de compra e venda no chamado Flag Pattern do Price action.",
       "O algoritmo também se destaca por emitir alertas somente quando há fluxo de qualidade. Isso o posiciona como um indicador confiável tanto de Fluxo quanto de Tendência.",
@@ -24,7 +24,7 @@ const indicators = [
   },
   {
     id: 3,
-    name: "SUPERNOVA 6",
+    name: "Contrarian",
     description: [
       "Essa ferramenta poderosa captura a reversão de tendencia de curto prazo e gera sinais certeiros de forma simples e intuitiva. Com a técnica contrarian e equilíbrio perfeito entre taxa de acerto e payoff, a Supernova 6 traz clareza para suas decisões, proporcionando tranquilidade e confiança na execução dos seus trades.",
     ],
@@ -37,6 +37,7 @@ const indicators = [
     name: "ROUTE 6",
     description: [
       "O mais famoso e aclamado indicador da Six projetado para colocar você na rota da consistência de lucros.",
+      "Se você tem o perfil para operações ultrarrápidas com foco no payoff, este é o indicador mais recomendado pra você.",
     ],
     indicatorImage: "./assets/ROUTE-INDICADOR.png",
     resultImage: "./assets/ROUTE-RESULTADO.png",
@@ -169,6 +170,12 @@ function renderIndicators() {
       indicator.activeButton = "indicator";
       renderIndicators(); // Re-render indicators
     });
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target.id !== "modalImage") {
+      modal.classList.add("hidden");
+    }
   });
 }
 

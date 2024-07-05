@@ -120,14 +120,24 @@
             </li>
           </ul>
         </div>
-        <div class="flex items-center">
-          <button></button>
+        <div class="flex items-center gap-4">
+          <a
+            href="https://special.sixtraders.com.br/"
+            target="_blank"
+            class="h-[44px] w-[44px] border-[1px] border-GRAY-BORDER-75 rounded-md grid place-content-center hover:opacity-75 transition-all"
+          >
+            <iconify-icon
+              icon="solar:user-circle-linear"
+              class="text-body18 text-WHITE"
+            >
+            </iconify-icon>
+          </a>
           <div class="md:max-w-[192px]">
-            <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
+            <a href="#adquirir-treinamento" class="primary-btn h-[44px] px-4">
               <div class="primary-btn-inside">
                 Garantir Acesso
                 <iconify-icon
-                  class="text-body18"
+                  class="text-body16"
                   icon="radix-icons:chevron-right"
                 ></iconify-icon>
               </div>
@@ -175,9 +185,19 @@
           </div>
         </div>
         <div
-          class="mt-16 md:mt-0 order-first md:order-2 relative w-full md:max-w-[524px] bg-GRAY-800 h-[248px] md:h-[312px] rounded-md bg-thumb bg-cover overflow-hidden"
+          class="mt-16 md:mt-0 order-first md:order-2 relative w-full md:max-w-[524px] bg-GRAY-800 h-[248px] md:h-[312px] rounded-md bg-thumb"
         >
-          <div
+          <iframe
+            id="youtube-video"
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/l8FqHLjcRJ0?si=Hd_0TUasHl42OVqg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <!--  <div
             class="absolute top-0 bottom-0 right-0 left-0 bg-GRAY-800 bg-opacity-90 grid place-content-center"
           >
             <div
@@ -204,7 +224,7 @@
                 <img src="./assets/st6-label.svg" alt="" srcset="" />
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </main>
@@ -466,28 +486,28 @@
                     RAPTOR 6
                   </a>
                 </li>
-                <li data-id="TEXAS 6" class="indicator-btn-nav">
+                <li data-id="Lone Star State" class="indicator-btn-nav">
                   <a
-                    href="#TEXAS 6"
-                    class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all"
+                    href="#Lone Star State"
+                    class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all uppercase"
                     href=""
                   >
                     <div
                       class="h-1 w-1 group-hover:bg-green-400 border-[1px] border-GRAY-400 group-hover:border-[0px] rounded-full transition-all"
                     ></div>
-                    TEXAS 6
+                    Lone Star State
                   </a>
                 </li>
-                <li data-id="SUPERNOVA 6" class="indicator-btn-nav">
+                <li data-id="Contrarian" class="indicator-btn-nav">
                   <a
-                    href="#SUPERNOVA 6"
-                    class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all"
+                    href="#Contrarian"
+                    class="group flex items-center gap-2 text-white text-opacity-45 font-medium hover:text-opacity-100 transition-all uppercase"
                     href=""
                   >
                     <div
                       class="h-1 w-1 group-hover:bg-green-400 border-[1px] border-GRAY-400 group-hover:border-[0px] rounded-full transition-all"
                     ></div>
-                    SUPERNOVA 6
+                    Contrarian
                   </a>
                 </li>
                 <li data-id="ROUTE 6" class="indicator-btn-nav">
@@ -603,16 +623,18 @@
       id="imageModal"
       class="bg-BLACK bg-opacity-75 hidden fixed top-0 right-0 left-0 bottom-0 w-full h-full z-50 overflow-y-auto transition-all px-4"
     >
-      <div class="fixed top-6 right-6">
-        <button id="closeModal">
-          <iconify-icon
-            class="text-body18"
-            icon="material-symbols:close"
-          ></iconify-icon>
-        </button>
-      </div>
       <div class="flex items-center justify-center h-full w-full">
-        <img id="modalImage" src="" alt="initial" srcset="" />
+        <div class="flex flex-col">
+          <div class="text-end">
+            <button id="closeModal">
+              <iconify-icon
+                class="text-head24"
+                icon="material-symbols:close"
+              ></iconify-icon>
+            </button>
+          </div>
+          <img id="modalImage" src="" alt="initial" srcset="" />
+        </div>
       </div>
     </div>
 
@@ -621,7 +643,7 @@
         <div>
           <h3 class="head-text-primary text-WHITE text-head40">
             Alertas inteligentes no seu gráfico. <br />
-            Menos Estresse. <br />
+            Menos tempo de tela. <br />
             Mais qualidade de vida.
           </h3>
         </div>
@@ -633,16 +655,14 @@
               </p>
             </button>
             <button class="py-4 border-b-[1px] border-transparent tab-button">
-              <p class="text-body16 font-HEAD font-medium">
-                Algoritmos de Alta Precisão
-              </p>
+              <p class="text-body16 font-HEAD font-medium">Sinais Intuitivos</p>
             </button>
             <button class="py-4 border-b-[1px] border-transparent tab-button">
               <p class="text-body16 font-HEAD font-medium">Economia de tempo</p>
             </button>
             <button class="py-4 border-b-[1px] border-transparent tab-button">
               <p class="text-body16 font-HEAD font-medium">
-                Consistência de lucros
+                Consistência de Lucros
               </p>
             </button>
           </div>
@@ -941,18 +961,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        O melhor gráfico para Day Trade 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >14:50m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -963,18 +983,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        Como Definir o Tamanho do Box  
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >10:40m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -985,18 +1005,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        Tendências 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >21:08m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1007,18 +1027,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        Fibonacci e Elliott 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >09:46m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1029,18 +1049,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        O Ciclo de Mercado 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >33:57m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1051,18 +1071,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        A Ligação dos Pontos no Gráfico 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >20:48m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1073,18 +1093,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        Os Fractais e o Triple Screen 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >34:29m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1095,18 +1115,18 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        Os Padrões Mais Importantes 
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
+                        >35:00m</span
                       >
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1117,18 +1137,392 @@
                   <div class="h-full flex flex-col justify-between">
                     <div class="w-full">
                       <p
-                        class="text-start font-HEAD text-head24 leading-tight font-light text-white"
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
                       >
-                        Teoria de Dow
+                        Estratégia Do Jogo Mental
                       </p>
                       <span
                         class="font-BODY text-body14 text-white font-light mt-2"
-                        >13:44m</span
-                      >
+                        >02:30m
+                      </span>
                     </div>
                     <div class="w-full">
                       <p class="font-BTN text-white font-bold text-body14">
-                        Assistindo
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Lagarta 
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >07:19m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Erros de aprendizagem 
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >04:37m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Modelo de processo
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >06:38m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        O Espectro da Emoção
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >02:23m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Desempenho e Emoção
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >01:54m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Injetando Lógica
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >07:03m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Equilíbrio Trade Vida
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >04:17m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Falta E Excesso De Confiança
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >04:54m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        O Poder da Decisão
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >11:36m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        A Relação "Taxa de Acerto" e Payoff
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >31:17m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Orçamento
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >13:48m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        O Check List dos Profissionais
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >03:00m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Pré Mercado - Passo a Passo
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >12:38m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Planejamento
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >14:00m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Preços
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >05:33m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Book Detalhado
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >02:17m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide z-40 h-[164px] max-w-[280px] w-full bg-GRAY-BORDER-75 rounded-md p-6"
+                >
+                  <div class="h-full flex flex-col justify-between">
+                    <div class="w-full">
+                      <p
+                        class="text-start font-HEAD text-body20 leading-tight font-light text-white"
+                      >
+                        Evolução no Tempo
+                      </p>
+                      <span
+                        class="font-BODY text-body14 text-white font-light mt-2"
+                        >04:28m
+                      </span>
+                    </div>
+                    <div class="w-full">
+                      <p class="font-BTN text-white font-bold text-body14">
+                        Disponível
                       </p>
                     </div>
                   </div>
@@ -1278,7 +1672,7 @@
               <p
                 class="font-HEAD font-semibold text-head24 text-white uppercase"
               >
-                a st6
+                st6
               </p>
             </div>
             <ul class="flex flex-col gap-2 mt-4 list-none">
@@ -1315,10 +1709,10 @@
           </p>
         </div>
         <div class="w-full flex justify-center mt-16">
-          <div class="max-w-[800px] w-full">
+          <div class="max-w-[1216px] w-full">
             <img
-              class="w-full rounded-md object-cover"
-              src="./assets/thorp.png"
+              class="w-full rounded-lg object-cover"
+              src="./assets/protocolo-thorp.png"
               alt=""
               srcset=""
             />
@@ -1341,7 +1735,7 @@
           class="flex items-start flex-col md:flex-row justify-between gap-16 mt-16"
         >
           <div
-            class="bg-rafael-avelar bg-cover max-w-[384px] w-full relative pl-[72px] h-[384px] rounded-md overflow-hidden"
+            class="bg-rafael-avelar bg-cover max-w-[348px] w-full relative pl-[72px] h-[384px] rounded-md overflow-hidden"
           >
             <div class="absolute bottom-6 left-6">
               <h6 class="font-HEAD text-head24 text-WHITE font-bold">
@@ -1356,23 +1750,20 @@
             <strong class="font-semibold font-HEAD text-body20 uppercase"
               >Feito por quem sabe de verdade!</strong
             >
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 md:max-w-[648px]">
               <p class="body-text-primary text-body18 text-GRAY-400 mt-6">
-                De família humilde do interior de São Paulo, Rafael chegou a
-                trabalhar como office boy. Em 2009, conseguiu um estágio em uma
-                grande instituição financeira.
+                De uma família humilde do interior de São Paulo, Rafael começou
+                sua trajetória no mercado financeiro em 2009.
               </p>
               <p class="body-text-primary text-body18 text-GRAY-400 mt-6">
-                Em 2011, foi efetivado em um dos maiores bancos do mundo. Desde
-                então, tirou certificações financeiras de prestígio (CEA e
-                CNPI-P), alcançou a consistência de lucros no Day Trade e ajudou
-                centenas de pessoas a mudar de patamar financeiro com seu método
-                de trading desenvolvido e lapidado ao longo de 10 anos.
+                Desde então, tirou certificações de prestígio, alcançou a
+                consistência de lucros no Day Trade e ajudou centenas de pessoas
+                a melhorar suas vidas com seu método, desenvolvido e lapidado ao
+                longo de 10 anos.
               </p>
               <p class="body-text-primary text-body18 text-GRAY-400 mt-6">
-                Sua abordagem prática e absolutamente simples é facilmente
-                replicada por aqueles que querem atingir a consistência de
-                lucros no menor tempo possível.
+                Sua abordagem prática e simples é facilmente replicável por
+                aqueles que desejam mudar de patamar financeiro rapidamente.
               </p>
             </div>
             <div class="mt-6">
@@ -1475,14 +1866,14 @@
           >
             Invista na sua liberdade
           </h3>
-          <p
+          <!-- <p
             class="body-text-primary text-GRAY-400 text-body18 text-center mt-6 max-w-[548px]"
           >
             Quanto custa a facilidade de ter os melhores indicadores fazendo
             todo o trabalho duro de análise pra você? Quanto é a oportunidade de
             trabalhar de onde você quiser, do jeito que você quiser e finalmente
             ter tempo para aproveitar a vida que merece?
-          </p>
+          </p> -->
         </div>
         <div
           class="max-w-[800px] mx-auto w-full border-[1px] border-GRAY-BORDER-75 rounded-md mt-16"
@@ -1502,16 +1893,16 @@
           <div class="py-16">
             <div class="w-full flex flex-col items-center gap-2">
               <span class="text-body14 text-GRAY-400 font-BODY"
-                >VALOR IMPERDÍVEL</span
+                >CONDIÇÃO ESPECIAL POR TEMPO LIMITADO</span
               >
-              <h4 class="font-HEAD text-head24 text-white font-bold">
+              <!-- <h4 class="font-HEAD text-head24 text-white font-bold">
                 Condição especial por tempo limitado
-              </h4>
+              </h4> -->
             </div>
             <div class="flex flex-col items-center w-full mt-6">
               <span
                 class="font-BODY text-body14 text-RED-ALERT text-center line-through"
-                >DE R$ 10.482,00</span
+                >DE R$ 9.479,00</span
               >
               <div class="max-w-[278px] w-full mt-4 flex flex-col">
                 <span
@@ -1671,7 +2062,7 @@
                     <a
                       class="text-body14 text-WHITE font-BODY font-light cursor-pointer hover:text-BLUE-PRIMARY transition-all"
                       href="#indicadores"
-                      >Indicadorees</a
+                      >Indicadores</a
                     >
                   </li>
                   <li>
@@ -1743,7 +2134,7 @@
             <div class="flex flex-col gap-12 mt-12 md:mt-0">
               <div>
                 <p class="font-BODY text-sm14 text-WHITE uppercase font-medium">
-                  ADQUIRA O TREINAMENTO
+                  Entre para o ST6
                 </p>
                 <div class="w-full md:max-w-[248px] mt-2">
                   <a href="#adquirir-treinamento" class="primary-btn py-3 px-4">
@@ -1840,38 +2231,13 @@
     <script>
       var swiper = new Swiper(".swiper-container", {
         direction: "horizontal",
-        slidesPerView: 1.5,
-        spaceBetween: 24,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-
-        // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next-initial",
           prevEl: ".swiper-button-prev",
         },
-        breakpoints: {
-          1024: {
-            slidesPerView: 1.25,
-            spaceBetween: 24,
-          },
-          768: {
-            slidesPerView: 1.5,
-            spaceBetween: 24,
-          },
-          640: {
-            slidesPerView: 1.5,
-            spaceBetween: 24,
-          },
-          348: {
-            slidesPerView: 1.1,
-            spaceBetween: 24,
-          },
-        },
+        centerInsufficientSlides: true,
+        spaceBetween: 24,
+        slidesPerView: 1.25,
       });
 
       var swiper = new Swiper(".swiper-depoimentos", {

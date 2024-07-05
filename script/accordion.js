@@ -6,46 +6,51 @@ const accordionData = [
   },
   {
     id: 2,
+    header: "Em qual plataforma os indicadores funcionam?",
+    body: "Os indicadores são exclusivos para o ProfitChart da Nelogica.",
+  },
+  {
+    id: 3,
     header: "Quanto tempo terei acesso aos indicadores?",
     body: "1 ano.",
   },
   {
-    id: 3,
+    id: 4,
     header: "Quanto tempo terei acesso ao treinamento?",
     body: "1 ano.",
   },
   {
-    id: 4,
+    id: 5,
     header: "Quanto tempo de acesso a TradingPro?",
     body: "6 meses.",
   },
   {
-    id: 5,
+    id: 6,
     header: "Preciso ter experiência no Day Trade para participar do ST6?",
     body: "Não é necessária nenhuma experiência no mercado. No ST6 você aprende do absoluto zero.",
   },
   {
-    id: 6,
+    id: 7,
     header: "Quanto tempo preciso me dedicar diariamente ao ST6?",
     body: "Apenas 1 hora por dia.",
   },
   {
-    id: 7,
+    id: 8,
     header: "Quais são os pré-requisitos para participar do ST6?",
     body: "Tudo o que você precisa é m PC ou notebook simples e conexão com a internet.",
   },
   {
-    id: 8,
+    id: 9,
     header: "Há suporte durante o treinamento?",
     body: "Sim. Você poderá tirar dúvidas e interagir em nossos canais de comunicação.",
   },
   {
-    id: 9,
+    id: 10,
     header: "Como funciona a garantia?",
     body: "Oferecemos uma garantia incondicional de 7 dias. Sendo assim, você pode entrar, acessar o conteúdo e, se não se adaptar, entender que não é para você naquele momento ou até mesmo se arrepender nos primeiros 7 sete dias, pode solicitar o reembolso dentro desse prazo e nós devolveremos 100% do valor investido. Simples assim, sem complicação",
   },
   {
-    id: 10,
+    id: 11,
     header: "Como acessar?",
     body: `
       Após realizar o pagamento e ter sido confirmado com sucesso, você receberá o acesso imediato ao nosso portal de aulas com o seu login e senha por e-mail.<br><br>

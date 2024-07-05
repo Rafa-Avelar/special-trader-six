@@ -289,7 +289,6 @@ body {
 
 .swiper-slide-initial-wrapper {
   width: 100%;
-  max-width: 696px;
   border: 1px solid #2f3133bf; /* Replace with your specific border color value */
   padding: 32px;
   border-radius: 4px;

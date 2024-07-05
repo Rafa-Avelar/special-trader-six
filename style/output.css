@@ -624,16 +624,8 @@ video {
   right: 0px;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.top-6 {
-  top: 1.5rem;
 }
 
 .top-\[64px\] {
@@ -797,6 +789,10 @@ video {
   height: 384px;
 }
 
+.h-\[44px\] {
+  height: 44px;
+}
+
 .h-\[70px\] {
   height: 70px;
 }
@@ -836,6 +832,10 @@ video {
 
 .w-\[148px\] {
   width: 148px;
+}
+
+.w-\[44px\] {
+  width: 44px;
 }
 
 .w-\[72px\] {
@@ -940,6 +940,30 @@ video {
 
 .max-w-\[968px\] {
   max-width: 968px;
+}
+
+.max-w-\[324px\] {
+  max-width: 324px;
+}
+
+.max-w-\[624\] {
+  max-width: 624;
+}
+
+.max-w-\[624px\] {
+  max-width: 624px;
+}
+
+.max-w-\[632px\] {
+  max-width: 632px;
+}
+
+.max-w-\[848px\] {
+  max-width: 848px;
+}
+
+.max-w-\[1216px\] {
+  max-width: 1216px;
 }
 
 .cursor-pointer {
@@ -1141,11 +1165,6 @@ video {
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
 }
 
-.bg-purple-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -1180,7 +1199,7 @@ video {
 }
 
 .bg-rafael-avelar {
-  background-image: url('/assets/mentor.jpg');
+  background-image: url('/assets/mentor.png');
 }
 
 .bg-thumb {
@@ -1748,7 +1767,6 @@ body {
 
 .swiper-slide-initial-wrapper {
   width: 100%;
-  max-width: 696px;
   border: 1px solid #2f3133bf;
   /* Replace with your specific border color value */
   padding: 32px;
@@ -1925,6 +1943,10 @@ html::-webkit-scrollbar-thumb {
 
   .md\:max-w-\[524px\] {
     max-width: 524px;
+  }
+
+  .md\:max-w-\[648px\] {
+    max-width: 648px;
   }
 
   .md\:grid-cols-2 {
