@@ -4,10 +4,10 @@ const depoimentosLinks = [
   "./assets/ganhos-e-agradecimentos-3.png",
   "./assets/ganhos-e-agradecimentos-4.png",
   "./assets/ganhos-e-agradecimentos-5.png",
+  "./assets/ganhos-e-agradecimentos-6.png",
   "./assets/ganhos-e-agradecimentos-7.png",
   "./assets/ganhos-e-agradecimentos-8.png",
   "./assets/ganhos-e-agradecimentos-9.png",
-  "./assets/ganhos-e-agradecimentos-10.png",
 ];
 
 // Function to shuffle an array

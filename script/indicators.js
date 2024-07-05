@@ -13,9 +13,9 @@ const indicators = [
   },
   {
     id: 2,
-    name: "Lone Star State",
+    name: "TEXAS 6",
     description: [
-      "Inspirado na essência do Lone Star State e historicamente lucrativo, o Texas 6 traz robustez em um conceito de plotagem diferente, frequentemente gerando sinais de compra e venda no chamado Flag Pattern do Price action.",
+      "Inspirado na essência do <i>Lone Star State</i> e historicamente lucrativo, o Texas 6 traz robustez em um conceito de plotagem diferente, frequentemente gerando sinais de compra e venda no chamado Flag Pattern do Price action.",
       "O algoritmo também se destaca por emitir alertas somente quando há fluxo de qualidade. Isso o posiciona como um indicador confiável tanto de Fluxo quanto de Tendência.",
     ],
     indicatorImage: "./assets/TEXAS-INDICADOR.png",
@@ -24,9 +24,9 @@ const indicators = [
   },
   {
     id: 3,
-    name: "Contrarian",
+    name: "SUPERNOVA 6",
     description: [
-      "Essa ferramenta poderosa captura a reversão de tendencia de curto prazo e gera sinais certeiros de forma simples e intuitiva. Com a técnica contrarian e equilíbrio perfeito entre taxa de acerto e payoff, a Supernova 6 traz clareza para suas decisões, proporcionando tranquilidade e confiança na execução dos seus trades.",
+      "Essa ferramenta poderosa captura a reversão de tendencia de curto prazo e gera sinais certeiros de forma simples e intuitiva. Com a técnica <i>contrarian</i> e equilíbrio perfeito entre taxa de acerto e payoff, a Supernova 6 traz clareza para suas decisões, proporcionando tranquilidade e confiança na execução dos seus trades.",
     ],
     indicatorImage: "./assets/SUPERNOVA-INDICADOR.png",
     resultImage: "./assets/SUPERNOVA-RESULTADO.png",
