@@ -91,7 +91,7 @@ const generateAccordionList = () => {
             id="accordion-id-${item.id}"
             class="hover:opacity-75 transition-all accordion-item cursor-pointer flex flex-col  p-6 rounded-lg border-[1px] border-GRAY-BORDER-75 accordion-item"
           >
-            <div class="accordion-header flex items-center justify-between">
+            <div class="accordion-header flex items-center justify-between gap-2">
               <p class="font-HEAD font-medium text-body18 text-WHITE pointer-events-none">
                 ${item.header}
               </p>

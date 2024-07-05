@@ -18,12 +18,20 @@ body {
   font-weight: 400;
   font-size: 1rem;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 .container {
-  margin: 0 auto;
-  max-width: calc(1216px + 32px);
   padding: 0 16px;
+  max-width: 100%;
+}
+
+@media (min-width: 1216px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: calc(1216px + 32px);
+  }
 }
 
 .primary-btn,
@@ -112,26 +120,26 @@ body {
   opacity: 0.5;
 } */
 
+@media (min-width: 1024px) {
+  .padding-container-left {
+    padding-left: calc((100vw - 1216px) / 2);
+  }
 
+  .padding-container-left-video {
+    padding-left: calc((100vw - 1216px) / 2 + 184px);
+  }
 
-.margin-container-right {
-  margin-right: calc((100vw - 1216px) / 2);
-}
+  .margin-container-right {
+    margin-right: calc((100vw - 1216px) / 2);
+  }
 
-.padding-container-right {
-  padding-right: calc((100vw - 1216px) / 2);
-}
+  .padding-container-right {
+    padding-right: calc((100vw - 1216px) / 2);
+  }
 
-.margin-container-left {
-  margin-left: calc((100vw - 1216px) / 2);
-}
-
-.padding-container-left {
-  padding-left: calc((100vw - 1216px) / 2);
-}
-
-.padding-container-left-video {
-  padding-left: calc((100vw - 1216px) / 2 + 184px);
+  .margin-container-left {
+    margin-left: calc((100vw - 1216px) / 2);
+  }
 }
 
 .horizontal-absolute-center {
@@ -229,6 +237,7 @@ body {
 .tab-content-image {
   background-size: cover; /* Ensure the image fits well */
   background-position: center;
+  object-fit: cover !important;
 }
 
 .swiper-button-disabled {
@@ -292,7 +301,13 @@ body {
   border: 1px solid #2f3133bf; /* Replace with your specific border color value */
   padding: 32px;
   border-radius: 4px;
-  height: 234px !important;
+  height: 384px !important;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide-initial-wrapper {
+    height: 234px !important;
+  }
 }
 
 .ganhos-slide-card {
@@ -316,3 +331,35 @@ html::-webkit-scrollbar-thumb {
   border-radius: 100px;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+#sidebar {
+  background-color: #0b0c11;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+#sidebar.open {
+  transform: translateY(-0%);
+  opacity: 1;
+}
+
+#menu-toggle,
+#close-sidebar {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#close-sidebar {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
