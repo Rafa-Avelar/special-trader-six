@@ -26,7 +26,7 @@ const indicators = [
     id: 3,
     name: "SUPERNOVA 6",
     description: [
-      "Essa ferramenta poderosa captura a reversão de tendencia de curto prazo e gera sinais certeiros de forma simples e intuitiva. Com a técnica <i>contrarian</i> e equilíbrio perfeito entre taxa de acerto e payoff, a Supernova 6 traz clareza para suas decisões, proporcionando tranquilidade e confiança na execução dos seus trades.",
+      "Essa ferramenta poderosa captura a reversão de tendência de curto prazo e gera sinais certeiros de forma simples e intuitiva. Com a técnica <i>contrarian</i> e equilíbrio perfeito entre taxa de acerto e payoff, a Supernova 6 traz clareza para suas decisões, proporcionando tranquilidade e confiança na execução dos seus trades.",
     ],
     indicatorImage: "./assets/SUPERNOVA-INDICADOR.png",
     resultImage: "./assets/SUPERNOVA-RESULTADO.png",

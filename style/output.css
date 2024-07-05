@@ -656,10 +656,6 @@ video {
   z-index: 50;
 }
 
-.z-\[\] {
-  z-index: ;
-}
-
 .z-\[9999\] {
   z-index: 9999;
 }
@@ -971,6 +967,14 @@ video {
   max-width: 968px;
 }
 
+.max-w-\[960px\] {
+  max-width: 960px;
+}
+
+.max-w-\[940px\] {
+  max-width: 940px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1221,10 +1225,6 @@ video {
 
 .bg-rafael-avelar {
   background-image: url('/assets/mentor.png');
-}
-
-.bg-thumb {
-  background-image: url('/assets/video-thumb.jpg');
 }
 
 .bg-cover {
